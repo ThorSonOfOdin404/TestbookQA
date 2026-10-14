@@ -33,61 +33,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="5.405984449959235E-133" />
-      <entry key="S2" value="2.298331132937452E-33" />
-      <entry key="S5" value="2.0923049659216635E-13" />
-      <entry key="S10" value="1.0512362438492802E-6" />
-      <entry key="S30" value="0.041783894528145335" />
-      <entry key="S60" value="0.8310175563291984" />
-      <entry key="M2" value="4.328095211406532" />
-      <entry key="M5" value="15.337394303712408" />
-      <entry key="M10" value="42.20196124476219" />
-      <entry key="M15" value="71.79214567589896" />
-      <entry key="M30" value="138.66210231055337" />
-      <entry key="H1" value="203.68427538884865" />
-      <entry key="H2" value="250.71693752167087" />
-      <entry key="H4" value="279.2962305334756" />
-      <entry key="D1" value="306.2350771306643" />
-      <entry key="W1" value="311.16834807424135" />
+      <entry key="MS100" value="1.117650560165178" />
+      <entry key="MS500" value="2.0877584035467738" />
+      <entry key="S2" value="4.1893072090096375" />
+      <entry key="S5" value="7.287410923393042" />
+      <entry key="S10" value="10.044074546949643" />
+      <entry key="S30" value="13.010566674363904" />
+      <entry key="S60" value="13.955469699911461" />
+      <entry key="M2" value="14.468709706845297" />
+      <entry key="M5" value="15.058917809002896" />
+      <entry key="M10" value="19.731524524191222" />
+      <entry key="M15" value="32.21633137037212" />
+      <entry key="M30" value="89.5149024044563" />
+      <entry key="H1" value="184.20560466003616" />
+      <entry key="H2" value="276.6272900843155" />
+      <entry key="H4" value="342.5514035421594" />
+      <entry key="D1" value="411.4174176262236" />
+      <entry key="W1" value="424.7336830240229" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000000000613" />
-      <entry key="S10" value="1.0000002478407475" />
-      <entry key="S30" value="1.0067998109120473" />
-      <entry key="S60" value="1.102047205724298" />
-      <entry key="M2" value="1.4366146417737296" />
-      <entry key="M5" value="2.3577689533768353" />
-      <entry key="M10" value="3.817628344887687" />
-      <entry key="M15" value="5.116680027820421" />
-      <entry key="M30" value="7.983664868942569" />
-      <entry key="H1" value="10.889813878735634" />
-      <entry key="H2" value="13.07163177260014" />
-      <entry key="H4" value="14.42618345945644" />
-      <entry key="D1" value="15.720837128260174" />
-      <entry key="W1" value="15.959683465890956" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="6.133139003417832E-186" />
+      <entry key="S10" value="2.4765181290475754E-93" />
+      <entry key="S30" value="1.362145792574334E-31" />
+      <entry key="S60" value="4.0535957105210564E-16" />
+      <entry key="M2" value="2.7552461574278355E-8" />
+      <entry key="M5" value="0.0019303199159113283" />
+      <entry key="M10" value="0.10923395792234962" />
+      <entry key="M15" value="0.4786641936711822" />
+      <entry key="M30" value="2.441876185278644" />
+      <entry key="H1" value="6.02255989394636" />
+      <entry key="H2" value="9.720982036273432" />
+      <entry key="H4" value="12.440608363796994" />
+      <entry key="D1" value="15.337598432706583" />
+      <entry key="W1" value="15.90351369130077" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.719792642279683E-7" />
-      <entry key="MS500" value="0.048630323534713665" />
-      <entry key="S2" value="0.4695985959298581" />
-      <entry key="S5" value="0.7390787504645848" />
-      <entry key="S10" value="0.8596981788597368" />
-      <entry key="S30" value="0.9992963977153625" />
-      <entry key="S60" value="1.9070423933531224" />
-      <entry key="M2" value="5.74963871114176" />
-      <entry key="M5" value="17.68617521650221" />
-      <entry key="M10" value="46.011125539940586" />
-      <entry key="M15" value="76.89992740224777" />
-      <entry key="M30" value="146.63669293845766" />
-      <entry key="H1" value="214.56678096815776" />
-      <entry key="H2" value="263.78379017281304" />
-      <entry key="H4" value="293.7196619728968" />
-      <entry key="D1" value="321.9553965519266" />
-      <entry key="W1" value="327.1279560082241" />
+      <entry key="MS100" value="1.0811623764563334" />
+      <entry key="MS500" value="2.0749308475596746" />
+      <entry key="S2" value="4.1820432049121825" />
+      <entry key="S5" value="7.281360572545992" />
+      <entry key="S10" value="10.039572192816587" />
+      <entry key="S30" value="13.008527524003068" />
+      <entry key="S60" value="13.954363818651105" />
+      <entry key="M2" value="14.468126927182894" />
+      <entry key="M5" value="15.06049185532505" />
+      <entry key="M10" value="19.840148187559777" />
+      <entry key="M15" value="32.69376725372109" />
+      <entry key="M30" value="91.95362286565047" />
+      <entry key="H1" value="190.223840931652" />
+      <entry key="H2" value="286.34454386274325" />
+      <entry key="H4" value="354.9895415053698" />
+      <entry key="D1" value="426.75449320218905" />
+      <entry key="W1" value="440.6371188694869" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -115,6 +115,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/pratham/mycode/AIProjects/MCPDemos/CICD demo/TestBookQA",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -129,9 +130,12 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../TestBookQA" />
-      <recent name="$PROJECT_DIR$/../TestBookQA/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/test/java/in/prathamattri/testbookqa/controller" />
     </key>
   </component>

@@ -29,11 +29,11 @@ jobs:
 
     env:
       # Application configuration
-      BASE_URL: http://localhost:8080
+      BASE_URL: http://localhost:5000
       IMAGE_NAME: testbook-api:latest
-      CONTAINER_NAME: bookapi
-      HOST_PORT: "8080"
-      CONTAINER_PORT: "8080"
+      CONTAINER_NAME: testbookapi
+      HOST_PORT: "5000"
+      CONTAINER_PORT: "5000"
 
       # Reporting configuration
       ALLURE_VERSION: "2.29.0"
@@ -58,7 +58,7 @@ jobs:
       - name: Checkout Book API Application
         uses: actions/checkout@v4
         with:
-          repository: kscorpio77/testbookapiworkflowdemo
+          repository: ThorSonOfOdin404/TestbookAPI
           ref: main
           path: book-api
 
