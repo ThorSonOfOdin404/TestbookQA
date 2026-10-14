@@ -1,0 +1,214 @@
+name: End-to-End API Automation | Docker | Allure Reports | AWS S3
+
+# ============================================================
+# PIPELINE TRIGGERS
+# ============================================================
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+  repository_dispatch:
+    types:
+      - book-api-build-success
+
+# GitHub needs permission to request an OIDC token from AWS.
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  api-automation:
+
+    name: Build, Test, Generate Reports and Upload to S3
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      # Application configuration
+      BASE_URL: http://localhost:8080
+      IMAGE_NAME: testbook-api:latest
+      CONTAINER_NAME: bookapi
+      HOST_PORT: "8080"
+      CONTAINER_PORT: "8080"
+
+      # Reporting configuration
+      ALLURE_VERSION: "2.29.0"
+      ALLURE_RESULTS_DIR: target/allure-results
+      ALLURE_REPORT_DIR: target/allure-report
+      LOG_DIR: target/docker-logs
+
+      # AWS configuration - GitHub Repository Variables
+      AWS_REGION: ${{ vars.AWS_REGION }}
+      REPORTS_BUCKET: ${{ vars.REPORTS_BUCKET }}
+      REPORT_PREFIX: testbook-api
+
+    steps:
+
+      # ======================================================
+      # STAGE 1 - CHECKOUT SOURCE CODE
+      # ======================================================
+
+      - name: Checkout Automation Repository
+        uses: actions/checkout@v4
+
+      - name: Checkout Book API Application
+        uses: actions/checkout@v4
+        with:
+          repository: kscorpio77/testbookapiworkflowdemo
+          ref: main
+          path: book-api
+
+      # ======================================================
+      # STAGE 2 - BUILD ENVIRONMENT
+      # ======================================================
+
+      - name: Set Up Java 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Verify Build Tools
+        run: |
+          echo "===== Build Environment ====="
+          java -version
+          mvn -version
+          docker --version
+          aws --version
+          bash --version
+
+      # ======================================================
+      # STAGE 3 - BUILD AND START BOOK API
+      # ======================================================
+
+      - name: Build Docker Image and Start Book API
+        run: |
+          bash scripts/start-book-api.sh ./book-api
+
+      # ======================================================
+      # STAGE 4 - EXECUTE API AUTOMATION TESTS
+      # ======================================================
+
+      - name: Execute RestAssured API Tests
+        run: |
+          bash scripts/run-api-tests.sh
+
+      # ======================================================
+      # STAGE 5 - INSTALL ALLURE REPORTING TOOL
+      # ======================================================
+
+      - name: Install Allure Reporting Tool
+        if: always()
+        run: |
+          bash scripts/install-allure.sh
+
+      # ======================================================
+      # STAGE 6 - GENERATE ALLURE HTML REPORT
+      # ======================================================
+
+      - name: Generate Allure HTML Report
+        if: always()
+        run: |
+          bash scripts/generate-allure-report.sh
+
+      # ======================================================
+      # STAGE 7 - COLLECT LOGS AND CLEAN UP DOCKER
+      # ======================================================
+
+      - name: Collect Logs and Stop Book API
+        if: always()
+        run: |
+          bash scripts/stop-book-api.sh
+
+      # ======================================================
+      # STAGE 8 - UPLOAD REPORTS TO GITHUB ARTIFACTS
+      # ======================================================
+
+      - name: Upload Maven Surefire Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-test-reports
+          path: target/surefire-reports/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Upload Allure HTML Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-html-report
+          path: target/allure-report/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Upload Raw Allure Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: target/allure-results/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Upload Docker Application Logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: book-api-docker-logs
+          path: target/docker-logs/
+          if-no-files-found: warn
+          retention-days: 30
+
+      # ======================================================
+      # STAGE 9 - AUTHENTICATE WITH AWS USING OIDC
+      # ======================================================
+
+      - name: Configure AWS Credentials
+        if: always()
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+          role-session-name: testbook-api-ci
+
+      # ======================================================
+      # STAGE 10 - UPLOAD REPORTS TO AWS S3
+      #
+      # All S3 upload logic is in the shell script.
+      # ======================================================
+
+      - name: Upload Test Reports to AWS S3
+        if: always()
+        run: |
+          bash scripts/upload-reports-s3.sh
+
+      # ======================================================
+      # STAGE 11 - PUBLISH PIPELINE SUMMARY
+      # ======================================================
+
+      - name: Publish Pipeline Summary
+        if: always()
+        run: |
+          {
+            echo "## Testbook API CI Pipeline"
+            echo ""
+            echo "| Component | Technology |"
+            echo "|---|---|"
+            echo "| Build | Docker |"
+            echo "| Application | Spring Boot |"
+            echo "| API Tests | RestAssured + JUnit |"
+            echo "| Build Tool | Maven |"
+            echo "| Test Reporting | Allure + Surefire |"
+            echo "| Report Storage | GitHub Artifacts + AWS S3 |"
+            echo "| AWS Authentication | GitHub OIDC |"
+            echo "| Automation | Bash + GitHub Actions |"
+            echo ""
+            echo "Reports are uploaded to GitHub Artifacts."
+            echo "S3 publishing is performed by upload-reports-s3.sh."
+          } >> "$GITHUB_STEP_SUMMARY"

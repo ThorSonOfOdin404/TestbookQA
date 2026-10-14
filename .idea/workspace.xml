@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="be525ebf-fc0c-49af-95b7-4ad0e1243597" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="5.405984449959235E-133" />
+      <entry key="S2" value="2.298331132937452E-33" />
+      <entry key="S5" value="2.0923049659216635E-13" />
+      <entry key="S10" value="1.0512362438492802E-6" />
+      <entry key="S30" value="0.041783894528145335" />
+      <entry key="S60" value="0.8310175563291984" />
+      <entry key="M2" value="4.328095211406532" />
+      <entry key="M5" value="15.337394303712408" />
+      <entry key="M10" value="42.20196124476219" />
+      <entry key="M15" value="71.79214567589896" />
+      <entry key="M30" value="138.66210231055337" />
+      <entry key="H1" value="203.68427538884865" />
+      <entry key="H2" value="250.71693752167087" />
+      <entry key="H4" value="279.2962305334756" />
+      <entry key="D1" value="306.2350771306643" />
+      <entry key="W1" value="311.16834807424135" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000000613" />
+      <entry key="S10" value="1.0000002478407475" />
+      <entry key="S30" value="1.0067998109120473" />
+      <entry key="S60" value="1.102047205724298" />
+      <entry key="M2" value="1.4366146417737296" />
+      <entry key="M5" value="2.3577689533768353" />
+      <entry key="M10" value="3.817628344887687" />
+      <entry key="M15" value="5.116680027820421" />
+      <entry key="M30" value="7.983664868942569" />
+      <entry key="H1" value="10.889813878735634" />
+      <entry key="H2" value="13.07163177260014" />
+      <entry key="H4" value="14.42618345945644" />
+      <entry key="D1" value="15.720837128260174" />
+      <entry key="W1" value="15.959683465890956" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="2.719792642279683E-7" />
+      <entry key="MS500" value="0.048630323534713665" />
+      <entry key="S2" value="0.4695985959298581" />
+      <entry key="S5" value="0.7390787504645848" />
+      <entry key="S10" value="0.8596981788597368" />
+      <entry key="S30" value="0.9992963977153625" />
+      <entry key="S60" value="1.9070423933531224" />
+      <entry key="M2" value="5.74963871114176" />
+      <entry key="M5" value="17.68617521650221" />
+      <entry key="M10" value="46.011125539940586" />
+      <entry key="M15" value="76.89992740224777" />
+      <entry key="M30" value="146.63669293845766" />
+      <entry key="H1" value="214.56678096815776" />
+      <entry key="H2" value="263.78379017281304" />
+      <entry key="H4" value="293.7196619728968" />
+      <entry key="D1" value="321.9553965519266" />
+      <entry key="W1" value="327.1279560082241" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Kh1mhCC54m4GZKM7G3mdniLKSS" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.BookControllerTest (1).executor": "Run",
+    "JUnit.BookControllerTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "TestNG./home/pratham/mycode/AIProjects/MCPDemos/CICD demo/TestbookQA/src/test/resources/testng.xml.executor": "Run",
+    "TestNG.BookControllerTest.shouldCreateBookSuccessfully.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../TestBookQA" />
+      <recent name="$PROJECT_DIR$/../TestBookQA/src" />
+      <recent name="$PROJECT_DIR$/src/test/java/in/prathamattri/testbookqa/controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BookControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestBookQA (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="in.prathamattri.testbookqa.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="in.prathamattri.testbookqa.controller" />
+      <option name="MAIN_CLASS_NAME" value="in.prathamattri.testbookqa.controller.BookControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookControllerTest (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be525ebf-fc0c-49af-95b7-4ad0e1243597" name="Changes" comment="" />
+      <created>1791995153075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1791995153075</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: in.prathamattri.testbookqa.controller.BookControllerTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.544 s <<< FAILURE! -- in in.prathamattri.testbookqa.controller.BookControllerTest
+in.prathamattri.testbookqa.controller.BookControllerTest.shouldDeleteExistingBookSuccessfully -- Time elapsed: 0.070 s <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at in.prathamattri.testbookqa.controller.BookControllerTest.shouldDeleteExistingBookSuccessfully(BookControllerTest.java:139)
+
